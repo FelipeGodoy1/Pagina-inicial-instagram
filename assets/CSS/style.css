@@ -1,0 +1,317 @@
+
+
+:root {
+
+    --bg-collor: #FAFAFA;
+    --bg-aside: #ffffff; 
+    --color-font: #8E8E8E;
+    --border-color: #DBDBDB;
+    --blue: #0095f6;
+    --color-obterapp: #000000;
+    --botao: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    
+
+}
+
+.dark-mode {
+    --bg-collor: #121212;
+    --bg-aside: #000000; 
+    --color-font: #8E8E8E;
+    --border-color: #363636;
+    --blue: #0095f6;
+    --color-obterapp: #ffffff;
+    
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body {
+    overflow-x: hidden;
+    font-family: var(--font-family);
+    background-color: var(--bg-collor);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+
+section {
+    width: 100%;
+    min-height: 681px;
+    height: calc(100% - 157px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    min-height: 625px;
+    height: 89%;
+    width: 100%;
+    max-width: 935px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.image{
+  
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.image-inside {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    margin-right: 32px;
+    margin-bottom: 12px;
+}
+
+.image-inside img {
+    width: 100%;
+    height: 581px;
+}
+
+
+.login{
+    
+    height: 100%;
+    min-height: inherit;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 352px;
+   
+}
+
+.inicial {
+    width: 100%;
+    max-width: 350px;
+    min-height: 335px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-aside);
+}
+
+
+.logo {
+    margin-top: 46px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.avatar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.avatar img {
+    margin-top: 20px;
+    width: 86px;
+    height: 86px;
+    border-radius: 43px;
+}
+
+.avatar .botao {
+    margin-top: 33px;
+    background-color: var(--blue);
+    color: var(--botao);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 11px;
+    border-radius: 5px;
+}
+
+.avatar .remove-conta {
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--blue);
+    font-size: 14px;
+}
+
+.troca {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 92px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    color: var(--color-font);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4rem;
+    background-color: var(--bg-aside);
+}
+
+.troca a {
+    color: var(--blue);
+    font-weight: 500;
+   
+}
+
+
+.app {
+    min-height: 101px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.app p {
+    margin-top: 18px;
+    font-size: 14px;
+    color: var(--color-obterapp);
+}
+
+.buttons-app {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.buttons-app img {
+    width: 133px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.buttons-app img:nth-child(1){
+    margin-right: 10px;
+}
+
+
+
+
+footer {
+    min-height: 157px;
+    height: auto;
+    width: 100%;
+    font-size: 12px;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 20px;
+     
+}
+
+.descricao {
+    height: auto;
+}
+
+.items-1,
+.items-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    
+}
+
+.items-1 a,
+.items-2 a {
+    margin-right: 17px;
+    color: var(--color-font);
+    line-height: 1.5rem;
+}
+
+
+.idiomas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    line-height: 1.5rem;
+}
+
+.idiomas p {
+    display: flex;
+    align-items: center;
+    color: var(--color-font);
+    padding-bottom: 10px;
+    
+}
+.idiomas span {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 875px){
+    .image {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 468px){
+
+
+    .login{
+        padding-bottom: 30px;
+    }
+
+    footer {
+        min-height: 200px;
+        max-height: 400px;
+    }
+
+        
+}
+   
+
+
+
+@media (max-width: 445px){
+
+    .login {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .inicial,
+    .troca {
+        border: none;
+        background-color: var(--bg-collor);
+        margin-top: 0;
+    }
+    
+    .idiomas{
+        padding-bottom: 30px;  
+    }
+
+}
+
+@media (max-width:275px){
+    .buttons-app img:nth-child(1){
+        margin-right: 0;
+    }
+}
